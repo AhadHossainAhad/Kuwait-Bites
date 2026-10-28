@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kuwait Bites</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Source+Sans+3:wght@400;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="wrap">
+      <p class="kicker">Kuwait food guide</p>
+      <h1>Kuwait Bites</h1>
+      <p class="lead">A food guide for beginners visiting Kuwait.</p>
+      <nav aria-label="Sections">
+        <a href="#try">What to try</a>
+        <a href="#day">A day of eating</a>
+        <a href="#tips">Good to know</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+
+      <section id="try">
+        <h2>What to try</h2>
+        <p class="sub">Start with these. Filter by the kind of thing you are hungry for.</p>
+
+        <div class="filters" role="group" aria-label="Filter dishes">
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="mains" aria-pressed="false">Mains</button>
+          <button type="button" data-filter="breakfast" aria-pressed="false">Breakfast</button>
+          <button type="button" data-filter="drinks" aria-pressed="false">Drinks</button>
+          <button type="button" data-filter="sweets" aria-pressed="false">Sweets</button>
+        </div>
+
+        <div class="grid" id="dishes">
+
+          <article class="card" data-cat="mains">
+            <span class="tag">Main</span>
+            <h3>Machboos <span class="arabic">مچبوس</span></h3>
+            <p>Spiced rice with chicken or fish.</p>
+            <p class="tip">Kuwait's national dish. Look for dried lime and a tomato-onion sauce on the side.</p>
+          </article>
+
+          <article class="card" data-cat="mains">
+            <span class="tag">Main</span>
+            <h3>Murabyan <span class="arabic">مربيان</span></h3>
+            <p>Rice cooked with shrimp in a tangy, spiced sauce.</p>
+            <p class="tip">A good pick if you want seafood.</p>
+          </article>
+
+          <article class="card" data-cat="mains">
+            <span class="tag">Main</span>
+            <h3>Margoog <span class="arabic">مرقوق</span></h3>
+            <p>A hearty stew of lamb or chicken, vegetables and thin pieces of dough.</p>
+            <p class="tip">Comfort food, often served in cooler months.</p>
+          </article>
+
+          <article class="card" data-cat="mains">
+            <span class="tag">Main</span>
+            <h3>Harees <span class="arabic">هريس</span></h3>
+            <p>Slow-cooked wheat and meat, beaten into a smooth porridge.</p>
+            <p class="tip">Most common during Ramadan and festivals.</p>
+          </article>
+
+          <article class="card" data-cat="breakfast">
+            <span class="tag">Breakfast</span>
+            <h3>Balaleet <span class="arabic">بلاليط</span></h3>
+            <p>Sweet vermicelli flavoured with cardamom and saffron, topped with a thin omelette.</p>
+            <p class="tip">Sweet and savoury in one plate.</p>
+          </article>
+
+          <article class="card" data-cat="breakfast">
+            <span class="tag">Breakfast</span>
+            <h3>Chebab <span class="arabic">جباب</span></h3>
+            <p>Soft, lightly sweet pancakes with saffron and cardamom.</p>
+            <p class="tip">Try them with cheese or date syrup.</p>
+          </article>
+
+          <article class="card" data-cat="drinks">
+            <span class="tag">Drink</span>
+            <h3>Karak chai <span class="arabic">كرك</span></h3>
+            <p>Strong, sweet milk tea.</p>
+            <p class="tip">Cafes everywhere sell it. Ask for less sugar if you prefer.</p>
+          </article>
+
+          <article class="card" data-cat="drinks">
+            <span class="tag">Drink</span>
+            <h3>Gahwa <span class="arabic">قهوة</span></h3>
+            <p>Light Arabic coffee with cardamom, often with saffron.</p>
+            <p class="tip">Served in small cups with dates. Shake the cup gently when you want to stop.</p>
+          </article>
+
+          <article class="card" data-cat="sweets">
+            <span class="tag">Sweet</span>
+            <h3>Luqaimat <span class="arabic">لقيمات</span></h3>
+            <p>Fried dough balls with date syrup.</p>
+            <p class="tip">Best eaten warm and fresh.</p>
+          </article>
+
+        </div>
+      </section>
+
+      <section id="day">
+        <h2>A day of eating</h2>
+        <p class="sub">A simple order to follow on your first day.</p>
+        <div class="menu">
+          <dl>
+            <div class="row"><dt>Morning</dt><dd>Balaleet or chebab with a glass of karak. Many local cafes open early.</dd></div>
+            <div class="row"><dt>Lunch</dt><dd>Machboos is the safe first choice. It is usually shared from a large platter.</dd></div>
+            <div class="row"><dt>Afternoon</dt><dd>Gahwa with dates, or a fresh cup of karak.</dd></div>
+            <div class="row"><dt>Evening</dt><dd>Seafood, grilled meat, or murabyan. Finish with luqaimat.</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section id="tips">
+        <h2>Good to know</h2>
+        <p class="sub">A few things that make eating out easier.</p>
+        <div class="cols">
+          <div>
+            <h3>Manners</h3>
+            <ul class="plain">
+              <li>Eat and pass food with your right hand.</li>
+              <li>When you are a guest, expect to be offered more food. Accepting a little is polite.</li>
+              <li>Dishes are often shared, so take from the part of the plate nearest you.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Timing</h3>
+            <ul class="plain">
+              <li>Eating and drinking in public during daylight hours in Ramadan is not allowed. Many restaurants open after sunset.</li>
+              <li>Dinner starts late. Busy restaurants fill up after 8 pm.</li>
+              <li>Opening hours change on public holidays, so check ahead.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Practical</h3>
+            <ul class="plain">
+              <li>Tap water is not usually drunk. Order bottled water.</li>
+              <li>Many places accept cards, but keep a little cash for small cafes.</li>
+              <li>Tell the staff about allergies. Nuts, sesame and dairy are common.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Kuwait Bites is a beginner guide. Dishes and customs vary by family and region, so ask locally when in doubt.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
